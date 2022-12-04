@@ -1,6 +1,6 @@
-========================
-GD32 SoC Series Overview
-========================
+===========================
+1. GD32 SoC Series Overview
+===========================
 
 Below table list GD32 Series peripheral overview:
 
@@ -42,36 +42,36 @@ Below table list GD32 Series peripheral overview:
 | GD32W51x        | N/A      | AF                |
 +-----------------+----------+-------------------+
 
-========
-GD32 FMC
-========
+===========
+2. GD32 FMC
+===========
 
 Currently, Zephyr support three GD32 FMC, v1, v2 and v3.
 
------------
-GD32 FMC v1
------------
+---------------
+2.1 GD32 FMC v1
+---------------
 
 This FMC's flash memory has 1 bank, page size is equal in the
 bank, flash size is smaller than 512KB.
 
------------
-GD32 FMC v2
------------
+---------------
+2.2 GD32 FMC v2
+---------------
 
 This FMC's flash memory has 2 banks. Page size equal within the
 same bank but different between banks. Flash size can be up to 3072KB.
 FMC v2 has two registers to control bank0 and bank1 separately.
 
------------
-GD32 FMC v3
------------
+---------------
+2.3 GD32 FMC v3
+---------------
 
 This FMC's flash memory has 2 banks, use sector size as the
 minimum operating unit, the sector size is not equal.
 
-------
-Others
-------
+----------
+2.4 Others
+----------
 
 GD32W51x series FMC support on Zephyr require new driver.
